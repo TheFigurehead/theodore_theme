@@ -1,6 +1,6 @@
 ## WP Test task for Theodore. ##
 
-## Files you'd like to see ##
+## Files you'd like to see -> ##
 
 ### * My styles (pretty messy) - ./cr-styles.css ###
 ### * Template file - ./front.php ###
