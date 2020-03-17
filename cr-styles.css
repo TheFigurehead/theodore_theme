@@ -1,0 +1,184 @@
+/* Car Rental Front */
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
+
+.cr_main{
+    font-family: 'Libre Baskerville', serif;
+}
+/* Hero block */
+
+.cr_hero_wrapper{
+	display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.cr_hero-content{
+	position: absolute;
+	left: 0;
+	top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.cr_hero-content-heading h1{
+	color: #DFE4E5;
+    font-weight: 600;
+    font-size: 62px;
+}
+
+.cr_hero-image{
+    display: inline-block;
+    max-width: 90%;
+}
+
+.cr_hero-image img{
+    max-width: 100%;
+    display: inline-block;
+}
+
+.cr_hero-content-button a{
+    width: 100%;
+    display: inline-block;
+    padding: 15px 20px;
+    text-align: center;
+    background-color: #FFCC01;
+    color: #000;
+    font-size: 24px;
+    font-family: 'Assistant', sans-serif;   
+    border-radius: 10px;
+    border: 1px solid #FFCC01;
+    transition: all .2s ease-in-out;
+}
+
+.cr_hero-content-button a:hover{
+    background-color: #f2deaf;;
+}
+
+.cr_hero-content-scroll_down{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg) translate(50%, 50%);
+}
+
+.cr_hero-content-scroll_down a{
+    color: #CACCCD;
+}
+
+/* Header */
+.cr-header{
+    padding: 20px 0;
+}
+
+/* vehicles grid */
+
+.rc_grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+/* .rc_grid-col:not(:nth-child(3n)){
+    margin-right: 15px;
+    flex-basis: calc( 33.33333% - 15px );
+} */
+
+.rc_grid-col:nth-child(3n-1){
+    margin: 0 15px;
+}
+
+.rc_grid-col{
+    flex-basis: calc( 33.33333% - 10px );
+    margin-bottom: 15px;
+}
+
+.rc_grid-col-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.rc_grid-col-image{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rc_grid-col-image img{
+    max-width: 100%;
+}
+
+.rc_grid-col-props{
+    display: flex;
+}
+
+.rc_grid-col-props-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 15px;
+}
+.rc_grid-col-props-col.info{
+    flex-grow: 1;
+}
+.rc_grid-col-price{
+    text-align: right;
+    color: #FFCC01;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.rc_grid-col-props-prop{
+    color: #777;
+}
+
+.rc_grid-col h2{
+    font-style: italic;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* search form */
+
+.cr_filter{
+    margin: 30px 0;
+}
+
+.cr_filter input[type=submit]{
+    background-color: #FFCC01;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+}
+
+.cr_filter select{
+    font-size: 16px;
+}
+
+.rc_grid-col-wrapper.nopadding{
+    padding: 0;
+}
+
+#load_more{
+    font-size: 16px;
+    font-family: 'Assistant', sans-serif;   
+    font-weight: 600;
+    padding: 15px 50px;
+    background-color: #fff;
+    display: block;
+    width: 250px;
+    margin: 10px auto 40px auto;
+    text-align: center;
+    cursor: pointer;
+}
